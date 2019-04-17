@@ -5,7 +5,14 @@ import { render, fireEvent } from 'react-testing-library';
 import Display from './Display';
 
 describe('<Display />', () => {
-  it('should ', () => {
+  it('Should render', () => {
     const { getByText } = render(<Display />);
+  });
+
+  it('Should display "Unlocked" & "Open" by default', () => {
+    const { getByText } = render(<Display />);
+
+    getByText(/unlocked/i);
+    getByText(/open/i);
   });
 });
