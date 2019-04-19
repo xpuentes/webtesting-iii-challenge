@@ -9,7 +9,7 @@ describe('<Dashboard />', () => {
   it('Should match the snapshot', () => {
     const tree = renderer.create(<Dashboard />);
 
-    expect(tree.toJSON()).toMatchSnapshot(); 
+    expect(tree.toJSON()).toMatchSnapshot();
   });
 
   it('Should render', () => {
